@@ -7,12 +7,12 @@ function getObservable(num: number) {
         const x = Math.floor(Math.random() * 100);
 
         setTimeout(() => {
-            if (x < 50) {
+            if (x < 75) {
                 observer.complete();
             } else {
-                observer.error(new Error(`Error with ${num}`));
+                observer.error(new Error(`Error with ${num}: ${x}`));
             }
-        }, x);
+        }, 1000+x);
     });
 }
 
