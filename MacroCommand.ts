@@ -11,6 +11,6 @@ export class MacroCommand extends AbstractCommand {
     }
 
     execute(message: any): Observable<any> {
-        return Observable.concat(..._.map(this.commands, (com: AbstractCommand) => (com.execute({}))));
+        return Observable.concat(..._.map(this.commands, (command: AbstractCommand) => (command.execute(message))));
     }
 }
