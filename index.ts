@@ -19,7 +19,6 @@ import * as _ from 'lodash';
 class Command {
     constructor(private num: number) {
         this.execute = this.execute.bind(this);
-        console.log(num);
     }
 
     execute() {
