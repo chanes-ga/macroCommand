@@ -74,7 +74,7 @@ const example = Rx.Observable.concat(..._.map(commands, (com: Command) => (com.e
 
 //output: 1,2,3,4,5,6
 const subscribe = example.subscribe((val) => {
-    console.log('got2', val);
+    console.log('got', val);
 }, (err) => {
     console.log(err.message);
 });
