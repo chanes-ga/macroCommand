@@ -1,4 +1,17 @@
 import * as Rx from 'rxjs';
+/*
+    menuclick call execute on macrocommand
+
+    macrocommand instantiated with an array of observables that emit a command
+        1) execute => validate selection
+        2) execute => shows dialog
+        3) execute => dialog button click
+        4) validate input
+        5) do action
+
+
+ */
+
 
 class Command {
     constructor(private num: number) {
